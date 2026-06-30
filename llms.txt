@@ -1,0 +1,18 @@
+# Custom Fit Grip
+
+> Custom Fit Grip makes 3D-printed, custom-fit ergonomic grips molded to your exact hand — for the Logitech MX Master mouse, Xbox Wireless Controller, keyboards, and pens. Not one-size-fits-all.
+
+## Page
+
+This is a single-page site. Key sections of [index.html](index.html):
+
+- **Hero** — what Custom Fit Grip is and why custom-fit beats average-fit.
+- **Devices & Pricing** (`#pricing`) — full product lineup: MX Master grip shells ($39.99), Xbox controller grips ($44.99), keyboard wrist rests ($34.99), and utensil/pen sleeves ($29.99).
+- **How It Works** (`#how-it-works`) — the measure, print, and attach process.
+- **About** (`#about`) — why Custom Fit Grip exists and how custom-fit beats average-fit accessories.
+- **FAQ** — common questions about devices, pricing, and ordering.
+- **Contact** (`#contact`) — how to reach Custom Fit Grip for orders, sizing, and refunds.
+
+## Notes
+
+This is a marketing and informational site. Ordering, account management, and customer support are handled at the official site: https://www.customfitgrip.com.

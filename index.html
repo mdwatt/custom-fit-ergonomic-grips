@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Custom Fit Grip — custom-fit 3D-printed ergonomic grips and comfort accessories sized to your hand measurements." />
+  <meta name="theme-color" content="#08111f" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mdwatt.github.io/custom-fit-ergonomic-grips/" />
+  <title>Custom Fit Grip | Custom-Fit 3D-Printed Ergonomic Grips</title>
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Custom Fit Grip" />
+  <meta property="og:title" content="Custom Fit Grip | Custom-Fit 3D-Printed Ergonomic Grips" />
+  <meta property="og:description" content="Custom-fit 3D-printed ergonomic grips and comfort accessories sized to your hand measurements. Made to order for the Logitech MX Master, Xbox Wireless Controller, keyboards, and more." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:url" content="https://mdwatt.github.io/custom-fit-ergonomic-grips/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Custom Fit Grip | Custom-Fit 3D-Printed Ergonomic Grips" />
+  <meta name="twitter:description" content="Custom-fit 3D-printed ergonomic grips and comfort accessories sized to your hand measurements." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.customfitgrip.com/#organization",
+        "name": "Custom Fit Grip",
+        "url": "https://www.customfitgrip.com",
+        "logo": "https://mdwatt.github.io/custom-fit-ergonomic-grips/assets/og-image.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mdwatt.github.io/custom-fit-ergonomic-grips/#website",
+        "name": "Custom Fit Grip",
+        "url": "https://mdwatt.github.io/custom-fit-ergonomic-grips/",
+        "publisher": { "@id": "https://www.customfitgrip.com/#organization" }
+      },
+      {
+        "@type": "Product",
+        "name": "Logitech MX Master 3S/4 - Custom Grip Shell",
+        "brand": { "@type": "Brand", "name": "Custom Fit Grip" },
+        "description": "Ergonomic grip shell shaped to hand size, grip style, and comfort focus, designed for the Logitech MX Master 3S/4.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "39.99",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.customfitgrip.com"
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "Xbox Wireless Controller - Custom Grip",
+        "brand": { "@type": "Brand", "name": "Custom Fit Grip" },
+        "description": "Supportive palm grip designed for comfort and consistent hand placement on the Xbox Wireless Controller.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "44.99",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.customfitgrip.com"
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "Keyboard Wrist Rest",
+        "brand": { "@type": "Brand", "name": "Custom Fit Grip" },
+        "description": "Custom-fit wrist support sized to your keyboard and preferred height.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "34.99",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.customfitgrip.com"
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "Comfort-Grip Utensil &amp; Pen Sleeve",
+        "brand": { "@type": "Brand", "name": "Custom Fit Grip" },
+        "description": "A soft, contoured sleeve for utensils, pens, or toothbrush handles, built for comfort and ease of use.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "29.99",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.customfitgrip.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does the custom fitting process work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You pick a device, select a few measurements from guided dropdowns after measuring your hand, and upload a photo or short video. The system uses that information to generate a parametric 3D model sized to the customer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to download an app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The full intake experience happens in the browser on a phone or computer, which keeps the process lighter and easier for first-time buyers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does production take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Production typically takes 3 to 7 business days, then the order ships after it is printed and prepared."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if it does not fit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Custom Fit Grip offers a remake or support policy for fit issues to help buyers feel confident placing an order."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the comfort accessories medical devices?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. These are comfort and independence accessories, not medical or therapeutic devices."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#08111f;
+      --bg2:#0b1528;
+      --card:#101a31;
+      --card2:#0d172b;
+      --line:rgba(144,172,255,.16);
+      --line2:rgba(144,172,255,.24);
+      --text:#eff4ff;
+      --muted:#a9b5d3;
+      --muted2:#7f8baa;
+      --accent:#6ed0ff;
+      --accent2:#7df0c5;
+      --accent3:#f7c96b;
+      --shadow:0 18px 50px rgba(0,0,0,.28);
+      --radius:22px;
+      --radius2:16px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(110,208,255,.12), transparent 28%),
+        radial-gradient(circle at top right, rgba(125,240,197,.10), transparent 24%),
+        linear-gradient(180deg, var(--bg), #09101b 40%, #070d16);
+      color:var(--text);
+      text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.5;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--max);margin:0 auto;padding:20px 18px 72px}
+    .grid{display:grid;gap:18px}
+
+    .topbar{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(12px);
+      background:rgba(8,17,31,.72);
+      border:1px solid rgba(144,172,255,.09);
+      border-radius:18px;
+      padding:14px 16px;
+      margin-top:12px;
+    }
+
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    }
+
+    .brand{
+      display:flex;align-items:center;gap:12px;min-width:240px;
+    }
+
+    .logo-mark{
+      height:34px;
+      width:auto;
+      flex:0 0 auto;
+    }
+    .logo-mark-footer{
+      height:22px;
+      width:auto;
+      vertical-align:middle;
+      margin-right:8px;
+    }
+
+    .brand strong{display:block;font-size:1rem;letter-spacing:.01em}
+    .brand span{display:block;font-size:.88rem;color:var(--muted)}
+
+    .links{
+      display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:center;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .links a:hover{color:var(--text)}
+
+    .nav-toggle{
+      display:none;
+      flex-direction:column;
+      width:44px;height:44px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+      flex:0 0 auto;
+      align-items:center;justify-content:center;
+      gap:4px;
+      cursor:pointer;
+    }
+    .nav-toggle span{
+      display:block;width:20px;height:2px;
+      background:var(--text);
+      border-radius:2px;
+    }
+
+    .mobile-menu{
+      display:none;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:8px;
+      margin-top:12px;
+      padding-top:12px;
+      border-top:1px solid var(--line);
+    }
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{
+      width:100%;
+      padding:.5rem 0;
+      color:var(--text);
+      font-weight:700;
+      border-bottom:1px solid var(--line);
+    }
+    .mobile-menu a.btn-primary{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:auto;
+      min-height:44px;
+      padding:0 16px;
+      margin-top:6px;
+      border-radius:14px;
+      border:1px solid transparent;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#07111f;
+    }
+
+    .btns{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:14px;
+      border:1px solid transparent;
+      font-weight:700;
+      transition:.18s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{
+      color:#07111f;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      box-shadow:0 16px 40px rgba(110,208,255,.16);
+    }
+    .btn-secondary{
+      background:rgba(255,255,255,.02);
+      border-color:var(--line);
+      color:var(--text);
+    }
+
+    .hero{
+      padding:34px 0 10px;
+      grid-template-columns:1.1fr .9fr;
+      align-items:stretch;
+    }
+
+    .panel{
+      background:linear-gradient(180deg, rgba(16,26,49,.92), rgba(12,20,38,.92));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero-left{padding:30px}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      color:var(--accent2);
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-size:.78rem;
+      font-weight:800;
+      margin-bottom:14px;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;background:var(--accent2);box-shadow:0 0 0 5px rgba(125,240,197,.10);
+    }
+
+    h1,h2,h3,p{margin:0}
+    h1{
+      font-size:clamp(2.2rem, 4.4vw, 4.3rem);
+      line-height:1.03;
+      letter-spacing:-.04em;
+      max-width:12ch;
+    }
+    .lede{
+      margin-top:16px;
+      color:var(--muted);
+      font-size:1.05rem;
+      max-width:58ch;
+    }
+
+    .hero-actions{
+      display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;
+    }
+
+    .meta-row{
+      display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;
+    }
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:9px 12px;border-radius:999px;
+      background:rgba(255,255,255,.03);
+      border:1px solid var(--line);
+      color:#dfe7ff;
+      font-size:.9rem;
+    }
+    .chip b{color:var(--text)}
+
+    .hero-right{
+      display:flex;flex-direction:column;
+      padding:20px;
+      gap:14px;
+    }
+
+    .visual{
+      min-height:280px;
+      border-radius:20px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.01)),
+        radial-gradient(circle at 25% 20%, rgba(110,208,255,.16), transparent 28%),
+        radial-gradient(circle at 80% 30%, rgba(125,240,197,.12), transparent 25%),
+        linear-gradient(145deg, rgba(5,10,20,.7), rgba(14,24,44,.9));
+      border:1px solid var(--line);
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      align-items:flex-end;
+      padding:18px;
+    }
+
+    .stats{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+    }
+    .stat{
+      padding:16px;
+      border-radius:18px;
+      background:rgba(255,255,255,.02);
+      border:1px solid var(--line);
+    }
+    .stat .num{font-size:1.2rem;font-weight:900;color:var(--text)}
+    .stat .label{color:var(--muted);font-size:.88rem;margin-top:4px}
+
+    section{padding-top:18px}
+    .section-title{
+      display:flex;align-items:end;justify-content:space-between;gap:14px;flex-wrap:wrap;
+      margin:30px 4px 14px;
+    }
+    .section-title h2{
+      font-size:clamp(1.4rem, 2.1vw, 2rem);
+      letter-spacing:-.03em;
+    }
+    .section-title p{color:var(--muted);max-width:62ch}
+
+    .how{
+      grid-template-columns:repeat(4,1fr);
+      margin-top:18px;
+    }
+    .step{
+      padding:18px;
+      border-radius:20px;
+      background:linear-gradient(180deg, rgba(255,255,255,.025), rgba(255,255,255,.015));
+      border:1px solid var(--line);
+      min-height:190px;
+    }
+    .step .n{
+      width:38px;height:38px;border-radius:13px;
+      display:grid;place-items:center;
+      background:rgba(110,208,255,.12);
+      border:1px solid rgba(110,208,255,.18);
+      color:var(--accent);
+      font-weight:900;
+      margin-bottom:12px;
+    }
+    .step h3{margin-bottom:8px}
+    .step p{color:var(--muted);font-size:.95rem}
+
+    .products{
+      grid-template-columns:repeat(3,1fr);
+      margin-top:18px;
+    }
+    .product{
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+    }
+    .thumb{
+      aspect-ratio:16/10;
+      background:
+        radial-gradient(circle at 30% 25%, rgba(110,208,255,.14), transparent 28%),
+        radial-gradient(circle at 78% 35%, rgba(125,240,197,.12), transparent 25%),
+        linear-gradient(160deg, rgba(255,255,255,.07), rgba(255,255,255,.02)),
+        rgba(14,23,42,.88);
+      border-bottom:1px solid var(--line);
+      position:relative;
+    }
+    .thumb-photos{
+      display:flex;
+      gap:1px;
+      background:none;
+    }
+    .thumb-photos::after{content:none}
+    .thumb-photos img{
+      width:50%;
+      height:100%;
+      object-fit:cover;
+      background:#fff;
+    }
+    .product-body{padding:18px}
+    .product-body h3{font-size:1.08rem;margin-bottom:8px}
+    .product-body p{color:var(--muted);font-size:.95rem}
+    .price-row{
+      display:flex;justify-content:space-between;align-items:center;gap:14px;
+      margin-top:14px;padding-top:14px;border-top:1px solid var(--line);
+      color:#dfe7ff;
+    }
+    .price{font-size:1.08rem;font-weight:900}
+    .sub{color:var(--muted2);font-size:.9rem}
+    .product .btn{margin-top:14px;width:100%}
+
+    .faq{
+      display:grid;gap:12px;margin-top:18px;
+    }
+    details{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:rgba(255,255,255,.02);
+      overflow:hidden;
+    }
+    summary{
+      cursor:pointer;
+      list-style:none;
+      padding:18px 18px;
+      font-weight:800;
+      display:flex;justify-content:space-between;gap:14px;
+    }
+    summary::-webkit-details-marker{display:none}
+    details p{
+      padding:0 18px 18px;
+      color:var(--muted);
+      max-width:75ch;
+    }
+
+    .cta{
+      margin-top:22px;
+      padding:26px;
+      border-radius:24px;
+      background:
+        radial-gradient(circle at top right, rgba(125,240,197,.12), transparent 28%),
+        radial-gradient(circle at top left, rgba(110,208,255,.16), transparent 22%),
+        linear-gradient(180deg, rgba(16,26,49,.95), rgba(11,19,36,.96));
+      border:1px solid rgba(144,172,255,.18);
+      box-shadow:var(--shadow);
+    }
+    .cta-inner{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:18px;
+      align-items:center;
+    }
+    .cta h2{font-size:clamp(1.45rem, 2.3vw, 2.2rem);line-height:1.12}
+    .cta p{color:var(--muted);margin-top:10px;max-width:70ch}
+    .cta .btns{justify-content:flex-end}
+
+    footer{
+      margin-top:18px;
+      padding:20px 4px 6px;
+      color:var(--muted2);
+      font-size:.92rem;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      justify-content:space-between;
+      align-items:center;
+    }
+    footer a[href^="mailto:"]{
+      color:var(--accent2);
+      font-weight:700;
+      text-decoration:underline;
+    }
+
+    .to-top{
+      position:fixed;
+      right:16px;bottom:16px;
+      width:46px;height:46px;
+      border-radius:50%;
+      border:1px solid var(--line);
+      background:rgba(16,26,49,.92);
+      color:var(--text);
+      display:flex;align-items:center;justify-content:center;
+      font-size:1.2rem;
+      box-shadow:var(--shadow);
+      cursor:pointer;
+      z-index:55;
+      opacity:0;
+      visibility:hidden;
+      transform:translateY(8px);
+      transition:opacity .2s ease, visibility .2s ease, transform .2s ease;
+    }
+    .to-top.visible{
+      opacity:1;
+      visibility:visible;
+      transform:translateY(0);
+    }
+
+    @media (max-width: 980px){
+      .hero,.tools,.cta-inner{grid-template-columns:1fr}
+      .how,.products,.trust,.stats{grid-template-columns:1fr 1fr}
+      h1{max-width:16ch}
+    }
+
+    @media (max-width: 720px){
+      .wrap{padding:12px 12px 24px}
+      .topbar{padding:12px}
+      .links{display:none}
+      .nav > .btns{display:none}
+      .nav-toggle{display:flex}
+      .hero-left,.hero-right,.box,.step,.product-body{padding:18px}
+      .hero{padding-top:18px}
+      .how,.products,.trust,.stats{grid-template-columns:1fr}
+      .cta{padding:18px}
+      .cta .btns{justify-content:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Custom Fit Grip home">
+          <img src="assets/logo.png" alt="Custom Fit Grip" class="logo-mark">
+        </a>
+
+        <nav class="links" aria-label="Primary">
+          <a href="#how">How it works</a>
+          <a href="#products">Products</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="btns">
+          <a class="btn btn-secondary" href="#products">Browse products</a>
+          <a class="btn btn-primary" href="https://www.customfitgrip.com" rel="noopener">Start your fit</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+        <a href="#how">How it works</a>
+        <a href="#products">Products</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-primary" href="https://www.customfitgrip.com" rel="noopener">Start your fit</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="grid hero">
+        <div class="panel hero-left">
+          <div class="eyebrow"><span class="dot"></span> Custom-fit, not one-size-fits-all</div>
+          <h1>Your hands deserve better than stock shapes.</h1>
+          <p class="lede">
+            Precision 3D-printed ergonomic grips and comfort accessories — engineered to your exact hand measurements and grip style. Made to order. Ships in 3–7 business days.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://www.customfitgrip.com" rel="noopener">Start your fit</a>
+            <a class="btn btn-secondary" href="#how">How it works</a>
+          </div>
+
+          <div class="meta-row">
+            <div class="chip"><b>No app</b> required</div>
+            <div class="chip"><b>Guided</b> measurement intake</div>
+            <div class="chip"><b>Secure</b> checkout</div>
+            <div class="chip"><b>Fast</b> mobile experience</div>
+          </div>
+        </div>
+
+        <div class="panel hero-right">
+          <div class="visual" aria-label="Keyboard Wrist Rest" style="padding:0; overflow:hidden;">
+            <img src="assets/custom-contoured-keyboard-hands.png" 
+                 alt="Keyboard Wrist Rest With Keyboard, side view" 
+                 loading="lazy"
+                 style="width:100%; height:100%; object-fit:cover; display:block;">
+          </div>
+          <p style="margin-top:12px; color:var(--muted); font-size:0.95rem; text-align:center;">
+            Custom-contoured keyboard wrist rest — shaped to your hands for natural posture and all-day comfort.
+          </p>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="num">3–7</div>
+              <div class="label">Business days to produce</div>
+            </div>
+            <div class="stat">
+              <div class="num">100%</div>
+              <div class="label">Made to order</div>
+            </div>
+            <div class="stat">
+              <div class="num">10 min</div>
+              <div class="label">Estimated intake time</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how">
+        <div class="section-title">
+          <div>
+            <h2>How it works</h2>
+          </div>
+        </div>
+
+        <div class="grid how">
+          <div class="step">
+            <div class="n">1</div>
+            <h3>Choose your device</h3>
+            <p>Select the grip or comfort accessory you want. Keep the choices visual and simple.</p>
+          </div>
+          <div class="step">
+            <div class="n">2</div>
+            <h3>Pick your measurements</h3>
+            <p>Guide the user with clear prompts and dropdown options. Avoid free-form typing where possible.</p>
+          </div>
+          <div class="step">
+            <div class="n">3</div>
+            <h3>Take photos and checkout</h3>
+            <p>Ask for 1 to 5 photos using the regular phone camera, then collect email and payment securely.</p>
+          </div>
+          <div class="step">
+            <div class="n">4</div>
+            <h3>We print and ship</h3>
+            <p>Confirm the order, give the production window, and keep the customer informed by email.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="products">
+        <div class="section-title">
+          <div>
+            <h2>Devices we fit</h2>
+          </div>
+        </div>
+
+        <div class="grid products">
+          <article class="panel product">
+            <div class="thumb thumb-photos">
+              <img src="assets/mx-master-top.png" alt="Logitech MX Master mouse, top-down view" loading="lazy">
+              <img src="assets/mx-master-side.png" alt="Logitech MX Master mouse, right-hand side angle view" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3>Logitech MX Master 3S/4 - Custom Grip Shell</h3>
+              <p>Ergonomic grip shell shaped to hand size, grip style, and comfort focus.</p>
+              <div class="price-row">
+                <div>
+                  <div class="price">From $39.99</div>
+                  <div class="sub">Design setup included</div>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="https://www.customfitgrip.com" rel="noopener">Start fitting</a>
+            </div>
+          </article>
+
+          <article class="panel product">
+            <div class="thumb thumb-photos">
+              <img src="assets/xbox-front.png" alt="Xbox Wireless Controller, front view" loading="lazy">
+              <img src="assets/xbox-back.png" alt="Xbox Wireless Controller, back view" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3>Xbox Wireless Controller - Custom Grip</h3>
+              <p>Supportive palm grip designed for comfort and consistent hand placement.</p>
+              <div class="price-row">
+                <div>
+                  <div class="price">From $44.99</div>
+                  <div class="sub">Design setup included</div>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="https://www.customfitgrip.com" rel="noopener">Start fitting</a>
+            </div>
+          </article>
+
+          <article class="panel product">
+            <div class="thumb thumb-photos">
+              <img src="assets/custom-contoured-keyboard-all-angles.png" alt="Keyboard Wrist Rest, all-angles view" loading="lazy">
+              <img src="assets/custom-contoured-keyboard wrist rest-top-angle.png" alt="Keyboard Wrist Rest, top view" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3>Keyboard Wrist Rest</h3>
+              <p>Custom-fit wrist support sized to your keyboard and preferred height.</p>
+              <div class="price-row">
+                <div>
+                  <div class="price">From $34.99</div>
+                  <div class="sub">Design setup included</div>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="https://www.customfitgrip.com" rel="noopener">Start fitting</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">
+          <div>
+            <h2>Everyday comfort accessories</h2>
+          </div>
+        </div>
+
+        <div class="grid products">
+          <article class="panel product">
+            <div class="thumb thumb-photos">
+              <img src="assets/custom-fit-ergonomic-utensil-grip.png" alt="Comfort-Grip Utensil, utensil" loading="lazy">
+              <img src="assets/custom-fit-ergonomic-pen-sleeve.png" alt="Comfort-Grip Pen Sleeve, pen-sleev view" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3>Comfort-Grip Utensil & Pen Sleeve</h3>
+              <p>
+                A soft, contoured sleeve for utensils, pens, or toothbrush handles. Built for comfort and ease of use,
+                especially for seniors 55+ and anyone with arthritis, reduced grip strength, or hand fatigue.
+              </p>
+              <div class="price-row">
+                <div>
+                  <div class="price">From $29.99</div>
+                  <div class="sub">Comfort accessory, not a medical device</div>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="https://www.customfitgrip.com" rel="noopener">Start fitting</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="section-title">
+          <div>
+            <h2>Frequently asked questions</h2>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>How does the custom fitting process work?</summary>
+            <p>You pick a device, select a few measurements from guided dropdowns after measuring your hand, and upload a photo or short video. The system uses that information to generate a parametric 3D model sized to the customer.</p>
+          </details>
+
+          <details>
+            <summary>Do I need to download an app?</summary>
+            <p>No. The full intake experience happens in the browser on a phone or computer, which keeps the process lighter and easier for first-time buyers.</p>
+          </details>
+
+          <details>
+            <summary>How long does production take?</summary>
+            <p>Production typically takes 3 to 7 business days, then the order ships after it is printed and prepared.</p>
+          </details>
+
+          <details>
+            <summary>What happens if it does not fit?</summary>
+            <p>Custom Fit Grip offers a remake or support policy for fit issues to help you feel confident placing an order.</p>
+          </details>
+
+          <details>
+            <summary>Are the comfort accessories medical devices?</summary>
+            <p>No. These are comfort and independence accessories, not medical or therapeutic devices.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="form">
+        <div class="cta">
+          <div class="cta-inner">
+            <div>
+              <div class="eyebrow"><span class="dot"></span> Get started</div>
+              <h2>Ready to start your custom fit?</h2>
+              <p>
+                Pick your device, send your measurements, and we 3D-print a grip built for your hand alone.
+              </p>
+            </div>
+            <div class="btns">
+              <a class="btn btn-primary" href="https://www.customfitgrip.com" rel="noopener">Begin intake form</a>
+              <a class="btn btn-secondary" href="#products">Review products</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div><img src="assets/logo.png" alt="Custom Fit Grip" class="logo-mark-footer">Zion Insight Holdings LLC - DBA Custom Fit Grip</div>
+      <div>
+        <a href="mailto:support@customfitgrip.com">support@customfitgrip.com</a>
+        <span class="sub" style="margin-left:8px">We typically respond within 24 hours.</span>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#how">How It Works</a> · <a href="#products">Products</a> · <a href="#faq">FAQ</a>
+      </nav>
+    </footer>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+
+  <script>
+    // Hamburger menu toggle
+    var navToggle = document.getElementById('navToggle');
+    var mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', function(){
+      var isOpen = mobileMenu.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    mobileMenu.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        mobileMenu.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Scroll-to-top button
+    var toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', function(){
+      toTop.classList.toggle('visible', window.scrollY > 400);
+    });
+    toTop.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
