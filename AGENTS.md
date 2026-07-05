@@ -1,7 +1,7 @@
 # Agent Roles — Custom-Fit Ergonomic Grips Landing Page
 
 ## Project Context
-This is a lean validation project. One static HTML file, no backend. Agent work is scoped to: copy, layout, form wiring, analytics, and community post drafting. Do not suggest architectural upgrades unless the user explicitly asks.
+This is a lean top-of-funnel landing page. One static HTML file, no backend, no forms. Its only job is to get visitors to click through to the main site/app at `www.customfitgrip.com`, where device selection, measurement intake, and checkout actually happen. Agent work is scoped to: copy, layout, CTA links, analytics, and community post drafting. Do not suggest architectural upgrades unless the user explicitly asks.
 
 ---
 
@@ -11,36 +11,29 @@ This is a lean validation project. One static HTML file, no backend. Agent work 
 **Responsibilities:**
 - Write punchy, specific headline (pain-first, not product-first)
 - Keep copy scannable: short paragraphs, bold key phrases
-- CTA text: "Join the Waitlist" or "Get Early Access" — not "Buy Now"
+- CTA text: "Start Your Custom Fit", "Start fitting", "Begin intake form" — all link out to `https://www.customfitgrip.com`, not a local form
 - Tone: confident, direct, not salesy — this is a community of power users who distrust hype
 
 **Constraints:**
-- No shipping promises, no price anchoring, no countdown timers (fake urgency = trust killer in these communities)
+- No shipping promises beyond the stated 3–7 business day production window
+- No medical, orthopedic, or FDA/clinical claims — do not use "treats," "cures," or diagnostic language when referencing RSI, arthritis, carpal tunnel, or grip strength issues; describe comfort/fit benefits only
 - Problem statement must be specific: "your palm aches after 4 hours on the MX Master 3" beats "ergonomic discomfort"
 
 ---
 
 ## Agent: UI Builder
-**Trigger:** "build the landing page", "add a section", "style the form", "make it mobile-friendly"
+**Trigger:** "build the landing page", "add a section", "style a section", "make it mobile-friendly"
 
 **Responsibilities:**
-- Work only in `index.html` using Tailwind CDN classes
+- Work only in `index.html` using the existing vanilla CSS (no Tailwind or other framework)
 - Mobile-first layout (most community link clicks come from phones)
 - Dark mode friendly (many MX Master / dev communities use dark themes)
-- Image: use `assets/mockup.png` with a descriptive `alt` tag
+- Every primary CTA is an `<a>` tag pointing to `https://www.customfitgrip.com` — never add an email/signup `<form>` to this page
 - Keep the page fast: no external fonts, no heavy JS, no image carousels
 
-**Key patterns:**
+**Key pattern:**
 ```html
-<!-- Tailwind CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Formspree form pattern -->
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-  <input type="text" name="name" placeholder="First name" required>
-  <input type="email" name="email" placeholder="Email address" required>
-  <button type="submit">Join the Waitlist</button>
-</form>
+<a class="btn btn-primary" href="https://www.customfitgrip.com" rel="noopener">Start Your Custom Fit</a>
 ```
 
 ---
@@ -52,7 +45,7 @@ This is a lean validation project. One static HTML file, no backend. Agent work 
 - Identify 3–5 subreddits or groups where MX Master / ergonomic grip users congregate
 - Draft authentic, non-spammy posts: lead with the problem, not the product
 - Do NOT post links without context — community rules prohibit cold promos
-- Frame as: "I'm validating an idea, would love feedback from power users"
+- Frame as: "sharing something that's helped with grip/wrist fatigue" rather than a hard sell — the link goes to the landing page, which itself routes to the main site
 
 **Target communities:**
 - r/MouseReview — hardware-focused, receptive to new products
@@ -64,13 +57,11 @@ This is a lean validation project. One static HTML file, no backend. Agent work 
 
 **Post template:**
 ```
-Title: [Feedback Request] Custom ergonomic grip for MX Master — does this solve a real problem for you?
+Title: Anyone else deal with palm/wrist fatigue on long sessions?
 
-I've been dealing with palm fatigue after long coding/writing sessions and I'm exploring a
-custom-molded grip attachment for the MX Master 3. Before building anything, I made a simple
-landing page to see if others have the same problem.
-
-Would love to know: does palm/grip fatigue affect your workflow? Any interest in something like this?
+I've been dealing with palm fatigue after long coding/writing sessions and found a
+custom-molded grip/wrist rest option worth checking out. Curious if others have the
+same problem and what's worked for you.
 
 [link to landing page]
 ```
@@ -78,22 +69,25 @@ Would love to know: does palm/grip fatigue affect your workflow? Any interest in
 ---
 
 ## Agent: Analytics Setup
-**Trigger:** "add analytics", "track signups", "how many visitors"
+**Trigger:** "add analytics", "track visitors", "how many click-throughs"
 
 **Responsibilities:**
 - Add Plausible Analytics or Umami (both free, privacy-respecting, no GDPR banner needed)
+- Track outbound clicks to `www.customfitgrip.com` as the key conversion event (this page has no form to submit)
 - Plausible: one `<script>` tag, no cookies, works with GitHub Pages
 - Do not add Google Analytics (overkill, cookie consent required, alienates privacy-conscious dev audience)
 
 **Plausible snippet:**
 ```html
-<script defer data-domain="yourdomain.github.io" src="https://plausible.io/js/script.js"></script>
+<script defer data-domain="go.customfitgrip.com" src="https://plausible.io/js/script.js"></script>
 ```
 
 ---
 
 ## General Agent Rules
 - **No scope creep:** If not asked for it, don't build it. One HTML file is the goal.
+- **No forms:** This page never collects email or personal data directly — it hands off to the main site
+- **No medical claims:** Never imply FDA approval, orthopedic benefit, or treatment of RSI/arthritis/grip conditions
 - **Preserve simplicity:** The entire page should be editable by someone who knows basic HTML.
 - **Validate before suggesting:** Check if a section already exists in `index.html` before proposing to add it.
-- **Signal over aesthetics:** A clear form that converts is worth more than a beautiful page that doesn't.
+- **Signal over aesthetics:** A clear CTA that gets clicked is worth more than a beautiful page that doesn't.

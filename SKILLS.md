@@ -1,6 +1,6 @@
 # Skills — Custom-Fit Ergonomic Grips Landing Page
 
-Custom slash commands for working on this validation project.
+Custom slash commands for working on this top-of-funnel landing page. This page has no form of its own — every CTA links out to `https://www.customfitgrip.com`.
 
 ---
 
@@ -8,13 +8,13 @@ Custom slash commands for working on this validation project.
 **What it does:** Generates or rewrites `index.html` as a complete, ready-to-deploy landing page.
 
 **Includes:**
-- Tailwind CDN
-- Hero section with headline + CTA
-- Problem section (3 bullet pain points)
-- Mockup image block (`assets/mockup.png`)
-- How It Works (3 steps)
-- Email capture form (Formspree)
-- Simple footer with no legal promises
+- Vanilla CSS (no framework)
+- Hero section with headline + CTA linking to `https://www.customfitgrip.com`
+- Problem section (pain points: grip/wrist fatigue, no personalized fit options)
+- Product image / device visuals
+- How It Works (3 steps, no photo upload required)
+- Devices grid, each with its own CTA to the main site
+- Simple footer with no legal/medical promises
 
 **Usage:** `/build-page` — generates the full file. Optionally pass a headline: `/build-page "Stop letting your grip slow you down"`
 
@@ -28,7 +28,7 @@ Custom slash commands for working on this validation project.
 - `/draft-post facebook` — Facebook group post (warmer, less technical tone)
 - `/draft-post slack` — Slack/Discord message (casual, brief)
 
-**Output:** Ready-to-paste post with title, body, and link placeholder. Follows community norms — no hard sell, problem-first framing.
+**Output:** Ready-to-paste post with title, body, and link placeholder. Follows community norms — no hard sell, problem-first framing. Link points to the landing page, which itself routes to the main site.
 
 ---
 
@@ -38,7 +38,7 @@ Custom slash commands for working on this validation project.
 **Usage:**
 - `/update-copy hero` — rewrite headline and subheadline
 - `/update-copy problem` — rewrite the pain-point section
-- `/update-copy cta` — rewrite the call-to-action button and surrounding text
+- `/update-copy cta` — rewrite CTA button text (destination stays `https://www.customfitgrip.com`)
 - `/update-copy howItWorks` — rewrite the 3-step explanation
 
 ---
@@ -46,19 +46,12 @@ Custom slash commands for working on this validation project.
 ## /add-analytics
 **What it does:** Adds Plausible Analytics snippet to `index.html` `<head>`.
 
-**Usage:** `/add-analytics yourusername.github.io`
+**Usage:** `/add-analytics go.customfitgrip.com`
 
 Inserts:
 ```html
-<script defer data-domain="yourusername.github.io" src="https://plausible.io/js/script.js"></script>
+<script defer data-domain="go.customfitgrip.com" src="https://plausible.io/js/script.js"></script>
 ```
-
----
-
-## /wire-form [formspree-id]
-**What it does:** Replaces `YOUR_FORM_ID` placeholder in `index.html` with a real Formspree form ID.
-
-**Usage:** `/wire-form xpwdkjrn`
 
 ---
 
@@ -67,7 +60,7 @@ Inserts:
 
 **Output:**
 ```
-Search Etsy for: "ergonomic mouse grip" "MX Master grip" "mouse grip attachment" "silicone mouse grip"
+Search Etsy for: "ergonomic mouse grip" "MX Master grip" "mouse grip attachment" "silicone mouse grip" "keyboard wrist rest"
 
 For each result record:
 - Product name
@@ -86,24 +79,23 @@ Signal interpretation:
 ---
 
 ## /check-signals
-**What it does:** Gives you a simple scoring rubric to interpret your validation results.
+**What it does:** Gives you a simple scoring rubric to interpret how well this page is driving traffic to the main site. Since this page has no form, the key metric is outbound click-throughs to `www.customfitgrip.com` (via analytics), not on-page signups.
 
 **Output:**
 
 | Signal | Score |
 |--------|-------|
-| 0–10 landing page signups from community posts | Red flag — wrong channel or wrong problem |
-| 10–30 signups | Weak signal — refine messaging, try different community |
-| 30–50 signups | Moderate signal — real interest, sharpen the value prop |
-| 50+ signups | Strong signal — consider next step (prototype or pre-order) |
-| Signups but no replies to follow-up email | Check if problem is strong enough to pay for |
-| Replies with "I'd pay $X for this" | Green light for prototype investment |
+| 0–10 click-throughs from community posts | Red flag — wrong channel or wrong problem |
+| 10–30 click-throughs | Weak signal — refine messaging, try different community |
+| 30–50 click-throughs | Moderate signal — real interest, sharpen the value prop |
+| 50+ click-throughs | Strong signal — traffic and messaging are working |
+| Click-throughs but low conversion on main site | Landing page messaging problem is not to blame — check the main site's intake/checkout flow |
 
 **Etsy scan overlay:**
-- Etsy demand confirmed + 50+ signups = proceed to prototype
+- Etsy demand confirmed + strong click-through rate = messaging and channel are working
 - Etsy demand confirmed + crickets on page = messaging problem, not product problem
-- No Etsy demand + 50+ signups = you may be first mover (higher risk, higher reward)
-- No Etsy demand + crickets = stop here
+- No Etsy demand + strong click-through rate = you may be first mover (higher risk, higher reward)
+- No Etsy demand + crickets = revisit positioning or channel
 
 ---
 
@@ -112,12 +104,10 @@ Signal interpretation:
 
 **Output:**
 ```
-[ ] Create GitHub repo named: custom-fit-ergonomic-grips
-[ ] Push index.html and assets/ to main branch
+[ ] Push index.html, assets/, and CNAME to main branch
 [ ] GitHub repo → Settings → Pages → Source: main, / (root)
-[ ] Wait ~60 seconds, visit: https://yourusername.github.io/custom-fit-ergonomic-grips/
-[ ] Replace YOUR_FORM_ID in index.html with real Formspree ID
-[ ] Test form submission end-to-end (submit a test email, confirm it arrives)
-[ ] Add OG meta tags (og:title, og:description, og:image) for clean link previews in communities
-[ ] Share in 1-2 communities and track signups for 72 hours
+[ ] Confirm custom domain (go.customfitgrip.com) resolves via CNAME
+[ ] Verify every CTA links to https://www.customfitgrip.com (no dead links, no forms)
+[ ] Add/verify OG meta tags (og:title, og:description, og:image) for clean link previews in communities
+[ ] Share in 1-2 communities and track click-throughs for 72 hours
 ```
