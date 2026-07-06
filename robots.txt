@@ -28,4 +28,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://yourusername.github.io/custom-fit-ergonomic-grips/sitemap.xml
+Sitemap: https://go.customfitgrip.com/sitemap.xml
